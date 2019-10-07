@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="oluplan">373454a21b1000109603fcc8cc4bcb33</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_user</name>
+        <order>2</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-07 17:07:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>333418261b1000109603fcc8cc4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope>
+        <sys_update_name>sys_app_module_333418261b1000109603fcc8cc4bcb5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-07 17:07:25</sys_updated_on>
+        <timeline_page/>
+        <title>Create New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</application>
+        <file_path/>
+        <instance_id>333df290dbfbf74007072f17d4961942</instance_id>
+        <instance_name>dev93205</instance_name>
+        <name>sys_app_module_333418261b1000109603fcc8cc4bcb5a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="oluplan">373454a21b1000109603fcc8cc4bcb33</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_user</name><order>2</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-10-07 17:07:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>333418261b1000109603fcc8cc4bcb5a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create New</sys_name><sys_overrides/><sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package><sys_policy/><sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope><sys_update_name>sys_app_module_333418261b1000109603fcc8cc4bcb5a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-10-07 17:07:25</sys_updated_on><timeline_page/><title>Create New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>188993729</payload_hash>
+        <record_name>Create New</record_name>
+        <reverted_from/>
+        <source>32c394e21b1000109603fcc8cc4bcb31</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-07 17:07:25</sys_created_on>
+        <sys_id>7b3418261b1000109603fcc8cc4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16da730a3f60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-07 17:07:25</sys_updated_on>
+        <type>Module</type>
+        <update_guid>b33418263d100010efc3fd6464dcb45b</update_guid>
+        <update_guid_history>b33418263d100010efc3fd6464dcb45b:188993729</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create New">a70334ee1b5000109603fcc8cc4bcb28</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-07 19:22:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0d2b052c12de4592808721a798197984</sys_id>
+        <sys_metadata>333418261b1000109603fcc8cc4bcb5a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope>
+        <sys_scope_delete display_value="">487bb51443f24e0d8a15d710e29a02f9</sys_scope_delete>
+        <sys_update_name>sys_app_module_333418261b1000109603fcc8cc4bcb5a</sys_update_name>
+        <sys_update_version display_value="sys_app_module_333418261b1000109603fcc8cc4bcb5a">7b3418261b1000109603fcc8cc4bcb5b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-07 19:22:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

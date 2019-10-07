@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_payment_schedule" table="x_200470_oluplan_incomes" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_payment_schedule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bi-weekly</label>
+            <language>en</language>
+            <name>x_200470_oluplan_incomes</name>
+            <sequence>0</sequence>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef50456e1b9000109603fcc8cc4bcbaf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:20:11</sys_updated_on>
+            <value>biweekly</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_payment_schedule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Twice Per Month</label>
+            <language>en</language>
+            <name>x_200470_oluplan_incomes</name>
+            <sequence>1</sequence>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2750456e1b9000109603fcc8cc4bcbb1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <value>twicepermonth</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_payment_schedule</element>
+            <name>x_200470_oluplan_incomes</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:20:11</sys_created_on>
+            <sys_id>6b50456e1b9000109603fcc8cc4bcbb0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_payment_schedule</sys_name>
+            <sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope>
+            <sys_update_name>sys_choice_x_200470_oluplan_incomes_u_payment_schedule</sys_update_name>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:20:11</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_200470_oluplan_expenses" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_200470_oluplan_expenses" element="NULL" name="x_200470_oluplan_expenses" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">360e30ea1b9000109603fcc8cc4bcbce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_id>fa0e30ea1b9000109603fcc8cc4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:10:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_autopay</element>
+            <list_id display_value="x_200470_oluplan_expenses" element="NULL" name="x_200470_oluplan_expenses" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">360e30ea1b9000109603fcc8cc4bcbce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_id>7e0e30ea1b9000109603fcc8cc4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:10:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_day_of_month_due</element>
+            <list_id display_value="x_200470_oluplan_expenses" element="NULL" name="x_200470_oluplan_expenses" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">360e30ea1b9000109603fcc8cc4bcbce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_id>fe0e30ea1b9000109603fcc8cc4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:10:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_est_amount</element>
+            <list_id display_value="x_200470_oluplan_expenses" element="NULL" name="x_200470_oluplan_expenses" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">360e30ea1b9000109603fcc8cc4bcbce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>true</sum>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_id>720e30ea1b9000109603fcc8cc4bcbcf</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:11:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_short_description</element>
+            <list_id display_value="x_200470_oluplan_expenses" element="NULL" name="x_200470_oluplan_expenses" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">360e30ea1b9000109603fcc8cc4bcbce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_id>f20e30ea1b9000109603fcc8cc4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:10:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_user</element>
+            <list_id display_value="x_200470_oluplan_expenses" element="NULL" name="x_200470_oluplan_expenses" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">360e30ea1b9000109603fcc8cc4bcbce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_id>760e30ea1b9000109603fcc8cc4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:10:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_200470_oluplan_expenses</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-07 20:10:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>360e30ea1b9000109603fcc8cc4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_200470_oluplan_expenses</sys_name>
+            <sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope>
+            <sys_update_name>sys_ui_list_x_200470_oluplan_expenses_null</sys_update_name>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-07 20:10:02</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

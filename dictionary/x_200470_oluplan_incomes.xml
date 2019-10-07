@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Incomes" max_length="40" name="x_200470_oluplan_incomes" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="omit_sys_original=true" label="Amount" max_length="20" name="u_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="300" name="u_description" type="string"/>
+        <element label="Monthly Payment Date 1" max_length="40" name="u_monthly_pay_date_1" type="integer"/>
+        <element label="Monthly Payment Date 2" max_length="40" name="u_monthly_pay_date_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Next Payment Date" max_length="40" name="u_next_pay_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="biweekly" label="Payment Schedule" max_length="40" name="u_payment_schedule" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Bi-weekly" sequence="0" value="biweekly"/>
+                <element inactive_on_update="false" label="Twice Per Month" sequence="1" value="twicepermonth"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_user"/>
+        </index>
+    </element>
+</database>
