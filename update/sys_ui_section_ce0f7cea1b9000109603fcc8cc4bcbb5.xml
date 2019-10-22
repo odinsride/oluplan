@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>6f50456e1b9000109603fcc8cc4bcbc3</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>7cbc528b1be400109603fcc8cc4bcb67</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_short_description</element>
             <position>1</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>ef50456e1b9000109603fcc8cc4bcbc3</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>fcbc528b1be400109603fcc8cc4bcb67</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_description</element>
             <position>2</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>6350456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>70bc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>e350456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>f0bc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_user</element>
             <position>4</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>6750456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>74bc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,69 +74,83 @@
             <element>u_amount</element>
             <position>5</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>e750456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>f4bc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_amount_to_save</element>
+            <position>6</position>
+            <sys_created_by>kecuster</sys_created_by>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>78bc528b1be400109603fcc8cc4bcb68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
+            <sys_updated_by>kecuster</sys_updated_by>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_payment_schedule</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>6b50456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>f8bc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_next_pay_date</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>eb50456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>7cbc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_monthly_pay_date_1</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>6f50456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>fcbc528b1be400109603fcc8cc4bcb68</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_monthly_pay_date_2</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:12</sys_created_on>
-            <sys_id>ef50456e1b9000109603fcc8cc4bcbc4</sys_id>
+            <sys_created_on>2019-10-22 02:36:15</sys_created_on>
+            <sys_id>70bc528b1be400109603fcc8cc4bcb69</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_200470_oluplan_incomes" sys_domain="global" view="Default view">ce0f7cea1b9000109603fcc8cc4bcbb5</sys_ui_section>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-07 20:20:12</sys_updated_on>
+            <sys_updated_on>2019-10-22 02:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

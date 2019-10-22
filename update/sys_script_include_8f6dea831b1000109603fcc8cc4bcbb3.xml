@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_200470_oluplan.opGeneratePlan</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Generate a Plan for a User.</description>
+        <name>opGeneratePlan</name>
+        <script><![CDATA[var opGeneratePlan = Class.create();
+
+opGeneratePlan.prototype = {
+    initialize: function(user) {
+      this.user = user;
+    },
+
+    plan: function () {
+      // RUN:
+      // var op = new opGeneratePlan(gs.getUserID());
+      // op.plan();
+
+      // Get all of the Incomes and sort them by date
+      var incomes = this._processIncomes();
+      
+      // Get all of the Expenses and sort them by date
+      var expenses = this._processExpenses();
+
+      // Combine the incomes and expenses and sort them by date
+      var plan = this._combinePlan(incomes, expenses);
+
+      // Calculate plan
+      plan = this._calculatePlan(plan);
+
+      for (var i = 0; i < plan.length; i++) {
+        gs.info(plan[i].date + '\t\t' + plan[i].type + '\t\t' + plan[i].amount + '\t\t' + plan[i].desc + '\t\t\t\t' + parseFloat(plan[i].balance).toFixed(2));
+      }
+    },
+
+    _calculatePlan: function (plan) {
+      var calculatedPlan = [];
+      var balance = 0.0;
+      var init = false;
+
+      for (var i=0; i < plan.length; i++) {
+        // Find the first Income and set the startBalance
+        if (!init && plan[i].type == 'Income') {
+          init = true;
+          balance = plan[i].amount;
+          calculatedPlan.push({
+            date: plan[i].date,
+            amount: plan[i].amount,
+            desc: plan[i].desc,
+            type: plan[i].type,
+            balance: balance
+          });
+          continue;
+        }
+        // Start subtracting and adding entries
+
+        if (plan[i].type == 'Income' && init) {
+          balance += +plan[i].amount;
+          calculatedPlan.push({
+            date: plan[i].date,
+            amount: plan[i].amount,
+            desc: plan[i].desc,
+            type: plan[i].type,
+            balance: balance
+          });
+          continue;
+        }
+
+        if ((plan[i].type == 'Expense' || plan[i].type == 'Held') && init) {
+          balance -= plan[i].amount;
+
+          if (balance <= 0) {
+            balance += +plan[i].amount;
+          }
+          else {
+            calculatedPlan.push({
+              date: plan[i].date,
+              amount: plan[i].amount,
+              desc: plan[i].desc,
+              type: plan[i].type,
+              balance: balance
+            });
+          }
+          continue;
+        }
+
+      }
+      return calculatedPlan;
+    },
+
+    _combinePlan: function (incomes, expenses) {
+      var combinedPlan = [];
+      for (var i=0; i < incomes.length; i++) {
+        combinedPlan.push(incomes[i]);
+      }
+      for (var j=0; j < expenses.length; j++) {
+        combinedPlan.push(expenses[j]);
+      }
+
+      combinedPlan = this.sortByDate(combinedPlan);
+      return combinedPlan;
+    },
+
+    _processExpenses: function () {
+      var expenses = [];
+      var thisExpense = {};
+
+      // Get the current date, month, day, year
+      var currentDate = new GlideDateTime();
+      var currentMonth = new GlideDateTime(currentDate).getMonthUTC();
+      var currentYear = new GlideDateTime(currentDate).getYearUTC();
+
+      var grExpense = new GlideRecord('x_200470_oluplan_expenses');
+      grExpense.addQuery('u_user', this.user);
+
+      var i = 0;
+      while (i < 12) {
+        grExpense.query();
+        while (grExpense.next()) {
+          thisExpense = {
+            date: new GlideDateTime(currentYear + '-' + currentMonth + '-' + grExpense.getValue('u_day_of_month_due')),
+            amount: grExpense.u_est_amount.getCurrencyValue(),
+            desc: grExpense.getValue('u_short_description'),
+            type: 'Expense'
+          };
+          expenses.push(thisExpense);
+        }
+        
+        currentMonth++;
+        if (currentMonth > 12) {
+          currentMonth = 1;
+          currentYear++;
+        }
+
+        i++;
+      }
+
+      // // Sort the expenses by date
+      // expenses = this.sortByDate(expenses);
+
+      // for (var i=0; i < expenses.length; i++) {
+      //   gs.info(expenses[i].date + '\t\t' + expenses[i].amount + '\t\t' + expenses[i].desc);
+      // }
+      return expenses;
+    },
+
+    _processIncomes: function () {
+      var incomes = [];
+      var thisIncome = {};
+      var grIncome = new GlideRecord('x_200470_oluplan_incomes');
+      grIncome.addQuery('u_user', this.user);
+      grIncome.query();
+
+      // Loop through each income
+      while (grIncome.next()) {
+        // For biweekly incomes, generate one year of dates based on the next paydate
+        if (grIncome.u_payment_schedule == 'biweekly') {
+          var biweeklyIncomes = this._processBiweeklyIncome(grIncome);
+          for (var i = 0; i < biweeklyIncomes.length; i++) {
+            incomes.push(biweeklyIncomes[i]);
+          }
+        }
+        else { // For twice monthly incomes, generate one year of dates based on the two pay dates provided
+          var twiceMonthlyIncomes = this._processTwiceMonthlyIncome(grIncome);
+          for (var i = 0; i < twiceMonthlyIncomes.length; i++) {
+            incomes.push(twiceMonthlyIncomes[i]);
+          }
+        }
+      }
+
+      // // Sort the incomes array by date
+      // incomes = this.sortByDate(incomes);
+
+      // // Print the incomes
+      // for (var i = 0; i < incomes.length; i++) {
+      //   gs.info(incomes[i].date + '\t\t' + incomes[i].amount + '\t\t' + incomes[i].desc);
+      // }
+
+      return incomes;
+    },
+
+    _processBiweeklyIncome: function (grIncome) {
+      var incomes = [];
+      var thisIncome = {};
+      var startDate = new GlideDateTime(grIncome.u_next_pay_date);
+      var endDate = new GlideDateTime(startDate);
+      endDate.addYearsUTC(1);
+
+      while (startDate <= endDate) {
+        thisIncome = new Object({
+          date: new GlideDateTime(startDate),
+          amount: grIncome.u_amount.getCurrencyValue(),
+          desc: grIncome.getValue('u_short_description'),
+          type: 'Income'
+        });
+        incomes.push(thisIncome);
+
+        if (grIncome.u_amount_to_save > 0) {
+          thisIncome = new Object({
+            date: new GlideDateTime(startDate),
+            amount: grIncome.u_amount_to_save.getCurrencyValue(),
+            desc: "Miscellaneous Expenses",
+            type: 'Held'
+          });
+        }
+        incomes.push(thisIncome);
+        
+        startDate.addDaysUTC(14);
+      }
+      return incomes;
+    },
+
+    _processTwiceMonthlyIncome: function (grIncome) {
+      var incomes = [];
+
+      // Get the current date, month, day, year
+      var currentDate = new GlideDateTime();
+      var currentMonth = new GlideDateTime(currentDate).getMonthUTC();
+      var currentYear = new GlideDateTime(currentDate).getYearUTC();
+
+      // Store the pay dates in an array to loop through
+      var payDates = [];
+      payDates.push(grIncome.u_monthly_pay_date_1);
+      payDates.push(grIncome.u_monthly_pay_date_2);
+
+      var i = 0;
+      while (i < 12) { // repeat for 12 months (1 year)
+
+        for (var j = 0; j < payDates.length; j++) {
+          // If February, and pay is on last day of month, set payDate to 28
+          if (currentMonth == 2 && payDates[j] > 28) {
+            payDate = 28;
+          }
+          else {
+            payDate = payDates[j];
+          }
+
+          thisIncome = {
+            date: new GlideDateTime(currentYear + '-' + currentMonth + '-' + payDate),
+            amount: grIncome.u_amount.getCurrencyValue(),
+            desc: grIncome.getValue('u_short_description'),
+            type: 'Income'
+          };
+          incomes.push(thisIncome);
+        }
+        
+        // Increase the current month and reset it as well as increase the year if it goes past December (12)
+        currentMonth++;
+        if (currentMonth > 12) {
+          currentMonth = 1;
+          currentYear++
+        }
+        i++;
+      }
+
+      return incomes;
+    },
+
+    // ------------- UTILS -------------- //
+
+    // Sort array members by object field 'date'
+    // Params: array
+    // Returns: array (sorted)
+    sortByDate: function (array) {
+      array.sort(function(a,b) {
+        var bDate = new GlideDateTime(b.date);
+        var aDate = new GlideDateTime(a.date);
+        return aDate.compareTo(bDate);
+      })
+      return array;
+    },
+
+    type: 'opGeneratePlan'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kecuster</sys_created_by>
+        <sys_created_on>2019-10-09 17:34:46</sys_created_on>
+        <sys_id>8f6dea831b1000109603fcc8cc4bcbb3</sys_id>
+        <sys_mod_count>240</sys_mod_count>
+        <sys_name>opGeneratePlan</sys_name>
+        <sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope>
+        <sys_update_name>sys_script_include_8f6dea831b1000109603fcc8cc4bcbb3</sys_update_name>
+        <sys_updated_by>kecuster</sys_updated_by>
+        <sys_updated_on>2019-10-22 02:48:12</sys_updated_on>
+    </sys_script_include>
+</record_update>

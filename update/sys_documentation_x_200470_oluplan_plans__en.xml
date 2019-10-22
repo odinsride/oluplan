@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="u_next_pay_date" label="Next payment date" language="en" table="x_200470_oluplan_incomes">
+    <sys_documentation element="" label="Plans" language="en" table="x_200470_oluplan_plans">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>u_next_pay_date</element>
+            <element/>
             <help/>
             <hint/>
-            <label>Next payment date</label>
+            <label>Plans</label>
             <language>en</language>
-            <name>x_200470_oluplan_incomes</name>
-            <plural>Next payment dates</plural>
+            <name>x_200470_oluplan_plans</name>
+            <plural>Plans</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>kecuster</sys_created_by>
-            <sys_created_on>2019-10-07 20:20:10</sys_created_on>
-            <sys_id>9750456e1b9000109603fcc8cc4bcb7b</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Next payment date</sys_name>
+            <sys_created_on>2019-10-08 17:55:54</sys_created_on>
+            <sys_id>67e829ba1b9000109603fcc8cc4bcb36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Plans</sys_name>
             <sys_package display_value="oluplan" source="x_200470_oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_package>
             <sys_policy/>
             <sys_scope display_value="oluplan">bac394e21b1000109603fcc8cc4bcb2e</sys_scope>
-            <sys_update_name>sys_documentation_x_200470_oluplan_incomes_u_next_pay_date_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_200470_oluplan_plans__en</sys_update_name>
             <sys_updated_by>kecuster</sys_updated_by>
-            <sys_updated_on>2019-10-22 02:35:13</sys_updated_on>
+            <sys_updated_on>2019-10-08 17:55:54</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
