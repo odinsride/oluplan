@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Expenses" max_length="40" name="x_200470_oluplan_expenses" type="collection">
+    <element label="Expenses" max_length="40" name="x_200470_oluplan_expenses" sizeclass="22" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Autopay?" max_length="40" name="u_autopay" type="boolean"/>
         <element label="Day of Month Due" max_length="40" name="u_day_of_month_due" type="integer"/>
